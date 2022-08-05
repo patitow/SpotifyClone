@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TITLE> Links Mais usados </TITLE>
+        <meta charset="UTF-8">
+        <script>
+            function testF() {
+                var username = document.getElementById("user").value
+                var password = document.getElementById("pass").value
+                var request = '/login_u{' + username + '}p{' + password + '}'
+                fetch(request).then(r => r.text()).then(txt => console.log(txt + 'chegou'))
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <p id="text">Welcome to Spotify 2, name</p>
+        </div>
+    </body>
+</html>

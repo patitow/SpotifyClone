@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TITLE>Login</TITLE>
+        <meta charset="UTF-8">
+        <script>
+            function unloggedMode() {
+                element("unlogged_bar").style.display = 'block'
+                element("logged_bar").style.display = 'none'
+            }
+            function loggedMode() {
+                element("unlogged_bar").style.display = 'none'
+                element("logged_bar").style.display = 'block'
+                element("user").value = ''
+                element("pass").value = ''
+            }
+            function element(id) {
+                return document.getElementById(id)
+            }
+            setInterval(function () {if(element("update").innerHTML == 'wait'){fetch('/update')}}, 100)
+            // Check for an active user
+            function checkActiveUser() {
+                element("update").innerHTML = 'wait'
+                fetch('/active_user').then(r => r.text()).then(txt => {
+                    if(txt == '') {
+                        unloggedMode()
+                    } else {
+                        loggedMode()
+                        element("logged_user").innerHTML = txt
+                    }
+                    element("update").innerHTML = ''
+                })
+            }
+            // Log in
+            function loginUser() {
+                var username = element("user").value
+                var password = element("pass").value
+                var request = '/login_u{' + username + '}p{' + password + '}'
+                element("update").innerHTML = 'wait'
+
+                fetch(request).then(r => r.text()).then(txt => {
+                    var text = ''
+                    if (txt == 'already_logged') {
+                        text = 'This account is already logged'
+                    } else if (txt == 'welcome') {
+                        text = 'Welcome back, ' + username
+                        element("logged_user").innerHTML = username
+                        loggedMode()
+                    } else if (txt == 'wrong_password') {
+                        text = 'Incorrect password, try again'
+                    } else {
+                        text = 'This account doesn\'t exist'
+                    }
+                    element("text").innerHTML = text
+                    element("update").innerHTML = ''
+                })
+            }
+            // Log out
+            function logoutUser() {
+                var username = element("user").value
+                var request = '/logout_u'
+                fetch(request)
+                unloggedMode()
+                element("text").innerHTML = 'Welcome to Spotify 2'
+            }
+            // Sign up
+            function signupUser() {
+                var username = element("user").value
+                var password = element("pass").value
+                var request = '/signup_u{' + username + '}p{' + password + '}'
+                element("update").innerHTML = 'wait'
+
+                fetch(request).then(r => r.text()).then(txt => {
+                    var text = ''
+                    if (txt == 'already_exists') {
+                        text = 'This account already exists'
+                    } else if (txt == 'invalid_characters') {
+                        text = 'Please, do not use special characters'
+                    } else {
+                        text = 'Welcome, ' + username
+                        element("logged_user").innerHTML = username
+                        loggedMode()
+                    }
+                    element("text").innerHTML = text
+                    element("update").innerHTML = ''
+                })
+            }
+        </script>
+    </head>
+    <body onload="checkActiveUser()">
+        <div id="unlogged_bar" style="display: none;">
+            <p id="text">Welcome to Spotify 2</p>
+            <label for="user">Username:</label>
+            <input id="user" type="text" name="name" maxlength="20" size="20">
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" name="password" maxlength="8" size="20">
+            <button id="login" onclick="loginUser()">Login</button>
+            <button id="register" onclick="signupUser()">Register</button>
+        </div>
+        <div id="logged_bar" style="display: none;">
+            <p id="logged_user">Your name</p>
+            <button id="logout" onclick="logoutUser()">Logout</button>
+        </div>
+        <p id="update" style="display: none;"></p>
+    </body>
+</html>
