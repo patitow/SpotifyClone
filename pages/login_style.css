@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Animação Gradiente */
+
+@-webkit-keyframes LoginScreenGradient {
+    0% {background-position: 0% 17%}
+    50% {background-position: 100% 84%}
+    100% {background-position: 0% 17%}
+}
+
+@-moz-keyframes LoginScreenGradient {
+    0% {background-position: 0% 17%}
+    50% {background-position: 100% 84%}
+    100% {background-position: 0% 17%}
+}
+
+@-o-keyframes LoginScreenGradient {
+    0% {background-position: 0% 17%}
+    50% {background-position: 100% 84%}
+    100% {background-position: 0% 17%}
+}
+
+@keyframes LoginScreenGradient {
+    0% {background-position: 0% 17%}
+    50% {background-position: 100% 84%}
+    100% {background-position: 0% 17%}
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    /* Animação Gradiente*/
+    background: linear-gradient(306deg, #1dce43, #042b00);
+    /* 19ee46 , 000000 */
+    background-size: 400% 400%;
+
+    -webkit-animation: LoginScreenGradient 11s ease infinite;
+    -moz-animation: LoginScreenGradient 11s ease infinite;
+    -o-animation: LoginScreenGradient 11s ease infinite;
+    animation: LoginScreenGradient 11s ease infinite;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #181818;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #121212;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    min-width: 40%;
+    min-height: 50%;
+}
+
+.btn-login{
+
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#main_img {
+    margin-right: 16px;
+    font-size: 36px;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+#error {
+    color: #ff0000;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        margin: 0;
+        padding: 0;
+
+        background: #000;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: black;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-weight: 700;
+        color: black;
+        font-size: 48px;
+    }
+
+    .formularios {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+
+        /* Animação Gradiente*/
+        background: linear-gradient(306deg, #1dce43, #0d8300);
+        /* 19ee46 , 000000 */
+        background-size: 400% 400%;
+
+        -webkit-animation: LoginScreenGradient 11s ease infinite;
+        -moz-animation: LoginScreenGradient 11s ease infinite;
+        -o-animation: LoginScreenGradient 11s ease infinite;
+        animation: LoginScreenGradient 11s ease infinite;
+    }
+
+    #spotifyLogo {
+        margin-right: 16px;
+        font-size: 48px;
+    }
+
+    .bi {
+        color: black;
+    }
+}

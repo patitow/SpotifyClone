@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <TITLE>Spotify 3</TITLE>
+  <meta charset="latin-1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <script type="text/javascript" src="../scripts/main_client.js"></script>
+  <link rel="stylesheet" href="newstyle.css">
+
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="topheader">
+    <div id="search_bar">
+      <input id="main_search_bar_text" oninput="typing('main bar'); setState('menu')"
+        onload="inicialScreen('main bar'); setState('menu')" type="text" class="btn btn-grey" maxlength="30" size="30"
+        placeholder="O que você quer ouvir?">
+    </div>
+    <div id="user_bar">
+    </div>
+  </div>
+
+  <div id="leftHeader">
+    <div id="leftHeaderContent">
+      <div id="row leftTopItem btn" style="display:flex; flex-direction: row; align-items:center; justify-content:center; margin-top: 15px; margin-bottom: 15px;">
+        <img id="spotifyLogo" src="../images/spotify_icon_white.svg" style="width: 30%;" alt="Spotify 3">
+        <h2 style="font-size:100%">Spotify 3</h2>
+      </div>
+      <div class="row">
+        <div id="user_buttons" class="col">
+          <div class="row leftItem">
+            <button type="button" class="btn btn-transparent" style="padding-left:5px; padding-right:5px;"><img id="spotifyLogo" src="../images/inicio.svg"
+                style="width: 25px;"> Início</button>
+          </div>
+          <div class="row leftItem">
+            <button type="button" class="btn btn-transparent" style="padding-left:5px; padding-right:5px;" id="user_buttons_items" class="btn"
+              onclick="setState('user')"><img id="spotifyLogo" src="../images/suabiblioteca.svg" style="width: 25px;">
+              Sua biblioteca</button>
+          </div>
+          <div class="row leftItem">
+            <button type="button" class="btn btn-transparent" style="padding-left:5px; padding-right:5px;" id="user_buttons_items" class="btn"
+              onclick="newPlaylist(); setState('playlist');">
+              <img id="spotifyLogo" src="../images/criarplaylist.svg" style="width: 25px;">Criar playlist
+            </button>
+          </div>
+          <div class="row leftItem">
+            <button type="button" class="btn btn-transparent" style="padding-left:5px; padding-right:5px;" id="user_buttons_items" class="btn"
+              onclick="setState('liked')">
+              <img id="spotifyLogo" src="../images/musicascurtidas.png" style="width: 25px;">
+              Músicas curtidas
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row" id="music_image_container">
+      <img id="music_image" src="">
+    </div>
+  </div>
+
+  <div id="main_screen_container">
+
+
+    <!-- menu -->
+    <div id="standard_playlists" hidden>
+      <h1>Playlists Encontradas</h1>
+    </div>
+
+    <div id="main_screen_container_greyBackground">
+      <div id="main_search_bar_results_container">
+        <div id="main_search_bar_results"></div></div>
+
+      <!-- liked -->
+      <div id="user_liked_playlist" hidden></div>
+
+      <!-- user -->
+      <div id="user_playlists">
+        <h1 style="color: white;"> Por favor faça login para visualizar o conteúdo!</h1>
+      </div>
+
+      <!-- playlist -->
+      <div id="current_playlist"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Parte do Player -->
+  <div id="playerheader">
+    <div id="player_left">
+      <div class="col" style="width: 100%; height:100%; padding:20px;">
+        <div id="current_song_stats"></div>
+      </div>
+    </div>
+    <div id="player_middle">
+      <div class="col">
+        <div class="row">
+          <div id="loaded_music_players">
+            <audio class="music_player" controls>
+              <source src="" type="">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="player_right">
+      <div id="likeButton_container" >
+        <button type="button" class="btn btn-transparent" style="padding: 0 !important;"><img id="spotifyLogo" src="../images/curtirMusica.svg"
+          style="width: 25px; padding: 5px !important;"></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

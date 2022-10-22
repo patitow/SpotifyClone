@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TITLE>Spotify 3 - Login</TITLE>
+        <meta charset="latin-1">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="newstyle.css">
+        <link rel="stylesheet" href="login_style.css">
+        <script type="text/javascript" src="../scripts/account_manipulation.js"></script>
+
+        <script>
+            const FORM_NAME = 'login'
+            var clickBtn = document.getElementById("clickBtn");
+        </script>
+    </head>
+    <body onload="start()">
+        
+        <div class="formularios">
+            <div style="display:flex; align-items:center; justify-content:center;">
+                <img id="main_img" src="../images/spotify_icon.png" style="width: 50px; height: 50px;">
+                <h1>Spotify 3</h1>
+            </div>
+            <input class="btn btn-login" oninput="typing('user')" id="user" type="text" maxlength="20" size="20" autocomplete="off" placeholder="Login">
+            <input class="btn btn-login" oninput="typing('pass')" id="pass" type="password" maxlength="12" size="20" placeholder="Senha">
+
+            <button class="btn btn-grey" id="clickBtn">Entrar no Spotify 3</button>
+
+            <label style="margin-top: 50px;">Não tem uma conta?</label>
+            <button class="btn btn-grey" onclick="window.location = '/signup'">Inscrever-se no Spotify 3</button>
+            <label id="error" style="display: none;"></label>
+        </div>
+    </body>
+</html>

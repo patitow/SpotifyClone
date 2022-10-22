@@ -1,0 +1,156 @@
+{
+    "Xande123": {
+        "password": "1234",
+        "last IP": "127.0.0.1",
+        "last access": "2022-10-19T21:38:07.860736",
+        "status": "offline",
+        "playlists": {
+            "*": [
+                "favorite songs.jpg"
+            ],
+            "AM - Arctic Monkeys": [
+                "Arctic Monkeys-AM-capa.jpg",
+                "Arctic Monkeys/AM/Do I Wanna Know.mp3",
+                "Arctic Monkeys/AM/I Wanna Be Yours.mp3",
+                "Arctic Monkeys/AM/R U Mine.mp3",
+                "Arctic Monkeys/AM/Why_d You Only Call Me When You_re High.mp3"
+            ],
+            "Ten Thousand Fists - Disturbed": [
+                "Disturbed-Ten Thousand Fists-capa.jpg",
+                "Disturbed/Ten Thousand Fists/Land of confusion.mp3",
+                "Disturbed/Ten Thousand Fists/Stricken.mp3",
+                "Disturbed/Ten Thousand Fists/Ten thousand fists.mp3"
+            ],
+            "American Idiot - Green Day": [
+                "Green Day-American Idiot-capa.jpg",
+                "Green Day/American Idiot/American Idiot.mp3",
+                "Green Day/American Idiot/Wake Me up When September Ends.mp3"
+            ]
+        }
+    },
+    "UserMatheus": {
+        "password": "12345678",
+        "last IP": "127.0.0.1",
+        "last access": "2022-10-19T23:53:45.993041",
+        "status": "offline",
+        "playlists": {
+            "*": [
+                "favorite songs.jpg"
+            ]
+        }
+    },
+    "Sasasasasa": {
+        "password": "Sasasasasa",
+        "last IP": "127.0.0.1",
+        "last access": "2022-10-20T08:42:56.213072",
+        "status": "offline",
+        "playlists": {
+            "*": [
+                "favorite songs.jpg",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Another One Bites The Dust.mp3",
+                "Guns N Roses/Appetite For Destruction/Paradise City.mp3",
+                "Guns N Roses/Appetite For Destruction/Welcome To The Jungle.mp3",
+                "The Beatles/Abbey Road/Come Together.mp3",
+                "Nirvana/Nevermind/Come As You Are.mp3",
+                "Bon Jovi/Slippery When Wet/Livin_ On A Prayer.mp3",
+                "Coldplay/A Rush Of Blood to the Head/The Scientist.mp3",
+                "Arctic Monkeys/AM/I Wanna Be Yours.mp3",
+                "Arctic Monkeys/AM/Do I Wanna Know.mp3",
+                "Arctic Monkeys/AM/R U Mine.mp3",
+                "Coldplay/A Rush Of Blood to the Head/Clocks.mp3"
+            ],
+            "Playlist DUROCK": [
+                "favorite songs.jpg",
+                "Metallica/Metallica/Enter Sandman.mp3",
+                "Metallica/Ride The Lightning/Fade To Black.mp3",
+                "Metallica/Ride The Lightning/For Whom The Bell Tolls.mp3",
+                "Metallica/Metallica/Nothing Else Matters.mp3",
+                "Metallica/Metallica/The Unforgiven.mp3"
+            ],
+            "Bohemian Rhapsody (Soundtrack) - Queen": [
+                "Queen-Bohemian Rhapsody (Soundtrack)-capa.jpg",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Another One Bites The Dust.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Don_t Stop Me Now.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Will Rock You.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Bohemian Rhapsody.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Are The Champions.mp3"
+            ],
+            "Abbey Road - The Beatles": [
+                "The Beatles-Abbey Road-capa.jpg",
+                "The Beatles/Abbey Road/Here Comes The Sun.mp3",
+                "The Beatles/Abbey Road/Come Together.mp3"
+            ],
+            "AM - Arctic Monkeys": [
+                "Arctic Monkeys-AM-capa.jpg",
+                "Arctic Monkeys/AM/I Wanna Be Yours.mp3",
+                "Arctic Monkeys/AM/R U Mine.mp3",
+                "Arctic Monkeys/AM/Do I Wanna Know.mp3",
+                "Arctic Monkeys/AM/Why_d You Only Call Me When You_re High.mp3"
+            ],
+            "A Rush Of Blood to the Head - Coldplay": [
+                "Coldplay-A Rush Of Blood to the Head-capa.jpg",
+                "Coldplay/A Rush Of Blood to the Head/Clocks.mp3",
+                "Coldplay/A Rush Of Blood to the Head/In My Place.mp3",
+                "Coldplay/A Rush Of Blood to the Head/The Scientist.mp3"
+            ],
+            "Nevermind - Nirvana": [
+                "Nirvana-Nevermind-capa.jpg",
+                "Nirvana/Nevermind/Smells Like Teen Spirit.mp3",
+                "Nirvana/Nevermind/Come As You Are.mp3",
+                "Nirvana/Nevermind/Something In The Way.mp3"
+            ]
+        }
+    },
+    "sasasasa": {
+        "password": "sasasasa",
+        "last IP": "127.0.0.1",
+        "last access": "2022-10-20T09:08:36.158236",
+        "status": "offline",
+        "playlists": {
+            "*": [
+                "favorite songs.jpg",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Another One Bites The Dust.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Don_t Stop Me Now.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Will Rock You.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Bohemian Rhapsody.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Are The Champions.mp3"
+            ],
+            "Playlist Customizada": [
+                "favorite songs.jpg",
+                "The Beatles/Abbey Road/Here Comes The Sun.mp3",
+                "The Beatles/Abbey Road/Come Together.mp3",
+                "The Beatles/1/I Want To Hold Your Hand.mp3",
+                "The Beatles/1/Hey Jude.mp3",
+                "The Beatles/1/Yesterday.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Another One Bites The Dust.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Will Rock You.mp3"
+            ],
+            "Nevermind - Nirvana": [
+                "Nirvana-Nevermind-capa.jpg",
+                "Nirvana/Nevermind/Smells Like Teen Spirit.mp3",
+                "Nirvana/Nevermind/Come As You Are.mp3",
+                "Nirvana/Nevermind/Something In The Way.mp3"
+            ],
+            "Appetite For Destruction - Guns N Roses": [
+                "Guns N Roses-Appetite For Destruction-capa.jpg",
+                "Guns N Roses/Appetite For Destruction/Paradise City.mp3",
+                "Guns N Roses/Appetite For Destruction/Welcome To The Jungle.mp3",
+                "Guns N Roses/Appetite For Destruction/Sweet Child O_ Mine.mp3"
+            ],
+            "A Rush Of Blood to the Head - Coldplay": [
+                "Coldplay-A Rush Of Blood to the Head-capa.jpg",
+                "Coldplay/A Rush Of Blood to the Head/Clocks.mp3",
+                "Coldplay/A Rush Of Blood to the Head/In My Place.mp3",
+                "Coldplay/A Rush Of Blood to the Head/The Scientist.mp3"
+            ],
+            "Bohemian Rhapsody (Soundtrack) - Queen": [
+                "Queen-Bohemian Rhapsody (Soundtrack)-capa.jpg",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Another One Bites The Dust.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Don_t Stop Me Now.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Will Rock You.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/Bohemian Rhapsody.mp3",
+                "Queen/Bohemian Rhapsody (Soundtrack)/We Are The Champions.mp3"
+            ]
+        }
+    }
+}
